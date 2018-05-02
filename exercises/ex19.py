@@ -18,3 +18,10 @@ cheese_and_crackers(10 + 20, 5 + 6)
 
 print("And we can combine the two, variables and math:")
 cheese_and_crackers(amount_of_cheese + 100, amount_of_crackers + 1000)
+
+def monty_python(coconuts, swallow_velocity):
+    print("And that my leige is how we know the earth to be banana shaped")
+    print(f"We have {coconuts} coconuts.")
+    print(f"The airspeed velocity of an unladen swallow is {swallow_velocity}!")
+
+monty_python(4, 183)
