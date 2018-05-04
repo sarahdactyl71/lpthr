@@ -21,7 +21,7 @@ but you can hear water as you near the head of the trail. \n
 2. The fork in the middle is very dark.
 When you investigate you can't see anything, but there is a scent of lavender. \n
 3. The fork on the right is a bright and well used path.
-You can hear people talking as you approach closer. \n
+You can hear hushed voices as you approach closer. \n
 Which trail do you choose? 1, 2, or 3? \n
 """)
 
@@ -59,7 +59,41 @@ if trail == "1":
         "How long has it been? Years since I have walked on two feet? Sorry stranger,
         but I did what I had to. Now it's your turn to wait for a human to drink from this stream."
         """)
-# elif trail == "2":
+    else :
+        print("Pay attention to instructions.")
+
+elif trail == "2":
+    print("""
+    You can't see anything as you wander through the darkness. \n
+    You move with your hands streched in front of you, protecting your face. \n
+    As you gain distance the smell of lavender increases until it is almost too much to bear. \n
+    You feel a hand reach out for yours, leading you further down the path. \n
+    The hand is small, but it feels non-threatening. \n
+    Do you follow it? \n
+    1. Yes \n
+    2. No \n
+    """)
+    choice = input("> ")
+
+    if choice == "1":
+        print("""
+        You let the hand guide you down the path. \n
+        Soon, you can see more and more light illuminating the path until
+        you have found your way out of the forest. \n
+        You turn to greet the being that guided your way here,
+        and thank it for their kindness. \n
+        But when you look there is nothing there. \n
+        You look at your hand to see an impression of a tiny
+        hand embedded in yours. \n
+        You shudder, and walk out of the forest. \n
+        """)
+    else:
+        print("""
+        You wander in the darkness wondering if anyone will ever find you on this path. \n
+        You don't know how much time as passed, but you feel like it has to be days at least. \n
+        Hunger has subsided, but you are so thirsty. \n
+        You lay down to rest, just for a minute... \n
+        """)
 # elif trail == "3":
 
 else:
