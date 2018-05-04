@@ -24,13 +24,20 @@ elif door == "2":
     print("You stare into the endless abyss at Cthulhu's retina.")
     print("1. Bluberries.")
     print("2. Yellow jacket clothespins.")
-    print("3. Understanding revolvers yelling melodies.")
+    print("3. The unbearable lightness of being.")
+    print("4. Understanding revolvers yelling melodies.")
 
     insanity = input("> ")
 
-    if insanity == "1" or insanity == "2":
+    if insanity == "1":
         print("Your body survives powered by a mind of jello.")
         print("Good job!")
+    elif insanity == "2":
+        print("You can't have bees here Michael.")
+        print("*sips martini*")
+    elif insanity == "3":
+        print("Good evening America. I'm Chloe Sevengy.")
+        print("It recently has come to my attention that I love Ray-ah-ding.")
     else:
         print("The insanity rots your eyes into a pool of muck.")
         print("Good job!")
