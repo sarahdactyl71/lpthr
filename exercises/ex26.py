@@ -25,8 +25,7 @@ print(txt_again.read())
 
 
 print('Let\'s practice everything.')
-print('You\'d need to know \'bout escapes
-      with \\ that do \n newlines and \t tabs.')
+print('You\'d need to know \'bout escapes \n with \\ that do \n newlines and \t tabs.')
 
 poem = """
 \tThe lovely world
@@ -37,9 +36,9 @@ and requires an explanation
 \n\t\t where there is none.
 """
 
-print("--------------)
+print("--------------")
 print(poem)
-print(--------------")
+print("--------------")
 
 
 five = 10 - 2 + 3
@@ -48,7 +47,7 @@ print(f"This should be five: {five}")
 def secret_formula(started):
     jelly_beans = started * 500
     jars = jelly_beans / 1000
-    crates = jars  100
+    crates = jars / 100
     return jelly_beans, jars, crates
 
 
@@ -63,7 +62,7 @@ print(f"We'd have {beans} beans, {jars} jars, and {crates} crates.")
 start_point = start_point / 10
 
 print("We can also do that this way:")
-formula = secret_formula(startpoint)
+formula = secret_formula(start_point)
 # this is an easy way to apply a list to a format string
 print("We'd have {} beans, {} jars, and {} crates.".format(*formula))
 
@@ -75,7 +74,7 @@ dogs = 15
 
 
 if people < cats:
-    print "Too many cats! The world is doomed!"
+    print("Too many cats! The world is doomed!")
 
 if people < cats:
     print("Not many cats! The world is saved!")
@@ -83,7 +82,7 @@ if people < cats:
 if people < dogs:
     print("The world is drooled on!")
 
-if people > dogs
+if people > dogs:
     print("The world is dry!")
 
 
@@ -92,9 +91,8 @@ dogs += 5
 if people >= dogs:
     print("People are greater than or equal to dogs.")
 
-if people <= dogs
-    print("People are less than or equal to dogs.)
+if people <= dogs:
+    print("People are less than or equal to dogs.")
 
-
-if people = dogs:
+if people == dogs:
     print("People are dogs.")
