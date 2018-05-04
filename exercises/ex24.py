@@ -27,6 +27,8 @@ def secret_formula(started):
 
 
 start_point = 10000
+#this is unpacking the variables and assigning them in order with the function.
+#must be the same amount of variables in function as the thing to unpack them in
 beans, jars, crates = secret_formula(start_point)
 
 #rememver that this is another way to form a string
@@ -39,4 +41,6 @@ start_point = start_point / 10
 print ("We can also do that this way:")
 formula = secret_formula(start_point)
 #this is an easy way to apply a list to a format string
+#different way to unpack variables into a string the splat denotes all
+#the variables in order
 print("We'd have {} beans, {} jars, and {} crates".format(*formula))
