@@ -10,7 +10,7 @@ print("What is your name?")
 name = input("> ")
 print("Why are you here?")
 reason = input("> ")
-print(f"So {name} you are here because of {reason})
+print(f"So {name} you are here because of {reason}")
 
 print("""
 You black out. \n
@@ -28,10 +28,39 @@ Which trail do you choose? 1, 2, or 3? \n
 trail = input("> ")
 
 if trail == "1":
+    print("""
+    You travel down the path for some time. \n
+    You have to avoid getting scratched by branches
+    and stumbling over roots. \n
+    After walking this way for some time you come upon a stream
+    where a red stag drinks water. \n
+    Do you... \n
+    1. Pet the stag to try and make him your best friend. \n
+    2. Sit next to the stag and drink from the stream. \n
+    """)
+    choice = input("> ")
 
-elif trail == "2":
-
-elif trail == "3":
+    if choice == "1":
+        print("""You walk up to the stag who seems wary of you. \n
+        But after taking your time and letting it smell your hand,
+        it gets comfortable with you. \n
+        You hop on its back, name it 'Dave' and get into shennanigans for years to come. \n""")
+    if choice == "2":
+        print("""
+        You drink from the stream and feel drowsy. (Sleep again?) \n
+        You resist the urge to fall into a deep slumber when you see your
+        body start to transform. \n
+        You grow hooves where your hands and feet used to be. \n
+        Your body grows fur and you can feel antlers start to grow from your skull. \n
+        You notice at the same time, the stag is also transforming. \n
+        Gaining human parts as you lose yours. \n
+        Just as the transformation is complete,
+        you see the newly formed human stretch her arms and say \n
+        "How long has it been? Years since I have walked on two feet? Sorry stranger,
+        but I did what I had to. Now it's your turn to wait for a human to drink from this stream."
+        """)
+# elif trail == "2":
+# elif trail == "3":
 
 else:
     print("You didn't come here just to stand around. Pick a trail by typing 1, 2, or 3")
