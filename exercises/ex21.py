@@ -30,3 +30,9 @@ print("Here is a puzzle")
 what = add(age, subtract(height, multiply(weight, divide(iq, 2))))
 
 print("That becomes: ", what, "Can you do it by hand?")
+
+#more of my additional programming
+
+age = int(input("How old are you?"))
+name = input("What is your name?")
+print(f"Hi {name}, Where do you see yourself when you are {age + 5}?")
