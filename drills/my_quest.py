@@ -94,7 +94,42 @@ elif trail == "2":
         Hunger has subsided, but you are so thirsty. \n
         You lay down to rest, just for a minute... \n
         """)
-# elif trail == "3":
+
+elif trail == "3":
+    print("""
+    You sneak as best as you can and as you get closer down the path the hushed voices
+    become more clear. \n
+    The best that you can tell is that they are talking about burying something, but whatever
+    the object is, isn't clear. \n
+    You sneak until you can see two hooded figures huddling around something, their backs turned
+    to you. \n
+    Do you \n
+    1. Sneak up on the figures.
+    2. Come out of the clearing and make them aware of your presense?
+    """)
+
+    choice = input("> ")
+
+    if choice == "1":
+        print("""You successfully sneak up to the hooded figures. You are practically
+        breathing down one's next when you hear a voice saying "We've been expecting you." \n
+        They stand aside to reveal a six foot deep hole in the ground. \n
+        You realize that you are meant to get in the hole. \n
+        You try to run away, but an invisible force pushed your legs forward one by one
+        leaving you helpless of the end of your destiny. \n
+        You lay in the bottom of the grave and wait as scoops of dirt cover you, blocking your
+        vision as everything gets darker.""")
+
+    if choice == "2":
+        print("""
+        You confront the hooded figures head on. Before they can say anything, you confront them
+        head on telling them that you are lost in the woods and looking for a way out. \n
+        You think they seem shocked, but you can't tell because the hoods still block their faces well. \n
+        One clears their throat "Yes, just keep walking past us and you should find yourself out of the woods." \n
+        You find this odd, but keep moving foward, very aware of the eyes on you. \n
+        They do not pursue you, but you see a grave that was dug as you walk by. \n
+        You shudder, and continue out the forest. \n
+        """)
 
 else:
     print("You didn't come here just to stand around. Pick a trail by typing 1, 2, or 3")
