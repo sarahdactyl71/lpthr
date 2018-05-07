@@ -1,3 +1,5 @@
+from sys import exit
+
 def start_game():
 
     print("""
@@ -24,9 +26,20 @@ def start_game():
 
     explore()
 
+def dead(reason):
+    print(f"{reason}. Dare you play again?")
+
+    choice = input("> ")
+
+    if choice == "no":
+        exit(0)
+    else:
+        start_game()
+
 def explore():
+
     print("Which room will you explore?")
-    
+
     choice = input("> ")
 
     if "left" in choice or "living room" in choice:
@@ -52,8 +65,31 @@ def living_room():
     choice = input("> ")
 
     if "yes" in choice or "play" in choice:
+        print("""
+        You press one finger down on a key. The piano is badly out of tune, but you can't resist playing another key, and then another. \n
+        Soon you are sitting on the bench playing your heart out to a tune that both pains and excites you. \n
+        The more you keep playing the less the piano sounds out of tune, and the more
+        it sounds like sweet music. \n
+        You play until your fingers are raw, and you can feel hunger growing in your belly. \n
+        You play your way to the final cresendo, fingers cascading down the keys almost too fast to be visible. \n
+        Once the final note has been played you breath a sigh of releif. Your masterpiece is complete. \n
+        You turn to see your friends but instead you are in an area restored to its former grandeur. \n
+        An audience of ghostly figures applauds you. \n
+        'Play another!' they shriek. \n
+        You turn back to the piano. \n
+        """)
+
+        dead("""You are caught in a never ending loop of piano playing. \n
+        You don't know how much time has passed, but eventually you are ushered off the piano bench
+        and onto a seat in the audience. \n
+        You don't understand, wasn't your playing enjoyable. \n
+        A sad woman nearby seems to read your mind when she says 'Don't worry, we will just wait here until another player arrives. \n
+        """)
+
     elif "explore" in choice or "room" in choice:
         explore()
     else:
         print("I don't understand. Try typing 'yes' or 'no'.")
         living_room()
+
+start_game()
