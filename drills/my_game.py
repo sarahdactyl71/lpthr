@@ -33,3 +33,21 @@ def start_game():
     else:
         print("Are you too chicken to choose a direction?")
         start_game()
+
+def living_room():
+    print("""
+    You lead your friends into the living room. The entire room is covered with a thin layer of dust
+    except for the grand piano which somehow, despite its degree of dilapitation, is seemingly spotless. \n
+    Your can feel the mood in the room start to shift, but your friends shake it off among some nervous laughter. \n
+    You are drawn to the piano. You don't know how to play, but you get a sudden urge to push your fingers down on the
+    ivory keys. \n
+    Do you dare play? \n
+    """)
+
+    choice = input("> ")
+
+    if choice == "yes":
+    elif choice == "no":
+    else:
+        print("I don't understand. Try typing 'yes' or 'no'.")
+        living_room()
