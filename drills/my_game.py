@@ -22,6 +22,11 @@ def start_game():
     is that there is a light far off in the distance, slightly illuminating one of the hallways.
     """)
 
+    explore()
+
+def explore():
+    print("Which room will you explore?")
+    
     choice = input("> ")
 
     if "left" in choice or "living room" in choice:
@@ -41,13 +46,14 @@ def living_room():
     Your can feel the mood in the room start to shift, but your friends shake it off among some nervous laughter. \n
     You are drawn to the piano. You don't know how to play, but you get a sudden urge to push your fingers down on the
     ivory keys. \n
-    Do you dare play? \n
+    Do you dare play? Or will you explore another room? \n
     """)
 
     choice = input("> ")
 
-    if choice == "yes":
-    elif choice == "no":
+    if "yes" in choice or "play" in choice:
+    elif "explore" in choice or "room" in choice:
+        explore()
     else:
         print("I don't understand. Try typing 'yes' or 'no'.")
         living_room()
