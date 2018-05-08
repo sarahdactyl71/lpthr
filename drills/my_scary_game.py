@@ -138,28 +138,11 @@ def explore_basement:
     You aren't sure if you saw a figure in the breif moment that the lights were on, or if it was just your imagination. Since this is the age of
     technology, everyone in your party gets out their cellphones to illuminate the room. The room is still shrouded in shadow, but it is just bright
     enough to make out the objects in the room. \n
-    The room is fairly austere. The walls are white, the floor is cement, and there are no other fixtures other than the broken light bulb above you.
-    In the center of the room there is an ornately carved chair. The carvings, depict an epic scene of demons battling angels. From the way the
-    chair is crafted, you aren't sure which side is winning the battle. Crudely etched into the seat of the chair in large block letters are the words 'Please Sit'. \n
-    One of your friends, Lisa, starts to panic. "The door leading upstairs has vanished!" You scan your eyes around the room and as much as
-    you don't want to believe it, Lisa is right. \n
-    A nervous shudder goes around the room. You don't know how or why, but each one of you has come to the understanding that the only way out
-    is for someone to sit in the chair. When you look back at the chair, the carvings have changed somehow, but you can't put your finger as
-    to what the changes are. \n
-    Lisa is the first to speak up "I'll sit in the chair, just to see what happens!" she suggests. You feel responsible for leading everyone down here,
-    and part of you thinks that you should be the one to sit. Lisa seems pretty intent on being the one to do it, but you know she will back down if you insist.
-    Will it be you, or Lisa who sits?
+    
     """)
 
     choice = input("> ")
 
-    if "Lisa" in choice or "lisa" in choice:
-        dead("""
-        A different friend sits down before you or Lisa can argue otherwise. At first he seems fine, he lets out a little nervous laughter. He seems almost embarraseed that
-        he thought sitting on a chair would magically create a door. You find out he wasn't wrong. The door appears as if it was never gone, when your friend starts to get up from the
-        chair wooden claws clamp down on his ankles and wrists. He doesn't have much time to squirm as you watch him transform into wood, a look of anguish on his face. \n
-        You can't look away as you see his figure become part of the battle depicted in the carvings in the chair. ß
-        """)
 
 def living_room():
     print("""
