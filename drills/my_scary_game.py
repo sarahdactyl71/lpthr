@@ -92,4 +92,26 @@ def living_room():
         print("I don't understand. Try typing 'yes' or 'no'.")
         living_room()
 
+def kitchen():
+    print("""
+    You enter the kitchen and are surprised to find it extraordinarily clean in an organized chaos kind of way. \n
+    It seems like every piece of cookware is out of the cabinets and again you ask yourself why this stuff hasn't been stolen a long time ago.
+    It is vintage but quality cookware from an era you can't recognize. You wonder how much a set like this must cost today. \n
+    As you explore more of the kitchen, you turn around the kitchen island to find a small table with two chairs propped against a wall.
+    On the table is an exotic dish. A type of cuisine you have never seen before. The smell emitted from it is delicious. Your mouth waters
+    and you hear your friend Tom come up behind you. 'If you don't take a bite then I will' he says. \n
+    Do you take the first bite or will you let Tom taste the delicacy before you?
+    """)
+
+    choice = input("> ")
+
+    if "Tom" in choice:
+        print("""
+        Tom takes a hesitant first bite, but as he chews and swallows you can see he enjoys it. He groans with delight as he forks a
+        second, and then a third. His eyes get wide and soon he has wolfed down the entire dish. He picks up the plate and licks it clean. \n
+        'That was so GOOD!' Tom yells. 
+        """)
+    else:
+
+
 start_game()
