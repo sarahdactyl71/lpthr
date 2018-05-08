@@ -110,9 +110,17 @@ def upstairs_to_main_floor():
             a young woman, badly crooked, wandering the house seeking her lost friends.""")
         else:
             explore_basement()
-            
-    elif "Lydia" in choice or "save" in choice or "lydia":
 
+    elif "Lydia" in choice or "save" in choice or "lydia":
+        dead("""
+        You, and a few others, fall with Lydia to the cavern below. You land hard on your side. As you get up
+        you find that you are badly injured, but you are able to walk. Upon investigation however, you find that some
+        of your friends are not as lucky. \n
+        As you investigate your surroundings you see no way out. It is as if this pit was here for this purpose. You touch the wall to find that
+        it is carved from jagged rock. Lydia, who is the only climber among you, would have been able to scale out of there
+        but here injuries are too extreme. You scream for help, but you know that there is no one around for miles. After several failed attempts
+        you sit with your back against a wall. All you can do now is wait. 
+        """)
     else:
         print("Try typing 'Lydia' or 'jump'.")
         upstairs_to_main_floor()
