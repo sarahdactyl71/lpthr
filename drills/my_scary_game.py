@@ -33,8 +33,11 @@ def dead(reason):
 
     if choice == "no":
         exit(0)
-    else:
+    elif choice == "yes":
         start_game()
+    else:
+        print("Try typing 'yes' if you want to play again, or 'no' if you don't.")
+        dead("Dare you play again?")
 
 def explore():
 
@@ -47,10 +50,17 @@ def explore():
     elif "right" in choice or "kitchen" in choice:
         kitchen()
     elif "stairs" in choice or "up" in choice:
-        upstairs()
+        explore_upstairs()
     else:
         print("Are you too chicken to choose a direction?")
         start_game()
+
+def explore_upstairs:
+    print("""
+    You start to ascend the creaky steps. They groan so loudly you think they will collapse
+    under your weight. Hand on the railing, you and your friends breath a sigh of relief
+    when you have reached the top of the stairs. 
+    """)
 
 def living_room():
     print("""
@@ -105,7 +115,7 @@ def kitchen():
 
     choice = input("> ")
 
-    if "Tom" in choice:
+    if "Tom" in choice or "tom" in choice:
         print("""
         Tom takes a hesitant first bite, but as he chews and swallows, you can see he enjoys it. He groans with delight as he forks a
         second, and then a third. His eyes get wide and soon he has wolfed down the entire dish. He picks up the plate and licks it clean. \n
