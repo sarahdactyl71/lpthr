@@ -71,7 +71,7 @@ def explore_upstairs:
     choice = input("> ")
 
     if "stairs" in choice:
-        go_downstairs()
+        upstairs_to_main_floor()
     elif "door" in choice:
         upstairs_room()
     elif "hallway" in choice:
@@ -80,7 +80,7 @@ def explore_upstairs:
         "try typing 'stairs', 'hallway' or 'door'"
         explore_upstairs()
 
-def go_downstairs():
+def upstairs_to_main_floor():
     print("""
     You and your friends are pretty creeped out at this point. You look around, meet everyone's eyes
     and motion your head to go down the stairs. Your friends nod, and you start to creep back down the way you
@@ -93,12 +93,29 @@ def go_downstairs():
     choice = input("> ")
 
     if "jump" in choice:
+        print("""
+        You manage to jump out of the way just in time, landing cleanly on your feet. Lydia, however, was not so lucky.
+        You call her name down the cavernous black hole where the staircase used to be. You can't see anything and you hear
+        nothing in response. What do you do? \n
+        Do you cut your losses and leave the house? \n
+        Or do you risk it all to save Lydia? \n
+        """)
 
+        choice = input("> ")
+
+        if "leave" in choice:
+            dead("""You are too stunned from surviving the fall that you have no time to greive for your lost friend.
+            You leave the house bruised, but you are alive. Time passes and you have never gone back to the house, out of fear,
+            and also guilt. You are much older now, and you hear urban legends from the younger generation speaking of
+            a young woman, badly crooked, wandering the house seeking her lost friends.""")
+        else:
+            explore_basement()
+            
     elif "Lydia" in choice or "save" in choice or "lydia":
 
     else:
         print("Try typing 'Lydia' or 'jump'.")
-        go_downstairs():
+        upstairs_to_main_floor()
 
 def living_room():
     print("""
