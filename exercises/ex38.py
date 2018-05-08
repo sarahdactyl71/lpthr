@@ -1,13 +1,14 @@
 #Doing things to lists
-ten_things = "Apples Oranges Crows Telephone Light Sugar"
+some_string = "Apples Oranges Crows Telephone Light Sugar"
 
 print("wait there are not 10 things in that list. Let's fix that")
 
-stuff = ten_things.split(' ')
-more_stuff = ["Day", "Night", "Song", "Frisbee",
-              "Corn", "Banana", "Girl", "Boy"]
+stuff = some_string.split(' ')
 
-while len(stuff) != 10:
+more_stuff = ["Day", "Night", "Song", "Frisbee",
+              "Corn", "Banana", "Girl", "Boy", "Animals", "Balloons", "Vegans", "Breakfast Burrito"]
+
+for things in stuff:
     next_one = more_stuff.pop()
     print("Adding: ", next_one)
     stuff.append(next_one)
