@@ -119,7 +119,23 @@ def kitchen():
 
         dead("You start to lose vision and everything goes black. The last thing you feel is the far away sensation of Tom biting into your neck.")
     else:
-        print("")
+        print("""
+        You try to hide your nerves with a smile as you pick up the fork near the plate. You pry off the smallest portion possible,
+        put it in your mouth and chew. You notice a slight off flavor, but also slightly familiar flavor to the meat. At first you
+        are repulsed by it, but as you begin to chew it tastes more delactable and savory. \n
+        Before you are aware of what is happening, the plate is clean. You feel a hunger start to boil in your stomach. You ignore
+        it at first, but it grows from a dull annoyance to a crippling gurgle. \n
+        You frantically search for anything edible. You tear through the kitchen, throwing pots and pans around, short of tearing
+        your hair out. You turn and see your friends. Tom who is closest to you stares wide-eyed. \n
+        You sniff the air. Something smells sweet. You follow your nose closer to the smell until you realize that it is coming
+        from Tom. Not only is it coming from him, it IS him. \n
+        You try to hide the fact that your mouth is watering. You do a poor job of this as you lick your lips. \n
+        'Tom' you say 'when did you start smelling so... delicious'? Tom puts up his arms in defense as you lunge at him. You
+        start taking bites from his legs as he squirms. He goes still when you go for his neck. \n
+        """)
 
+        dead("""You wipe your mouth when you are satiated. Knowing that you can't go home you decide it best to sit and wait for the next
+        group of silly teenagers to come through. \n
+        """)
 
 start_game()
