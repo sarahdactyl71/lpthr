@@ -154,8 +154,11 @@ def explore_basement:
     choice = input("> ")
 
     if "Lisa" in choice or "lisa" in choice:
-        print("""
-        Lisa sits down before you can argue otherwise. At first she seems fine, she lets out a little nervous laughter as 
+        dead("""
+        A different friend sits down before you or Lisa can argue otherwise. At first he seems fine, he lets out a little nervous laughter. He seems almost embarraseed that
+        he thought sitting on a chair would magically create a door. You find out he wasn't wrong. The door appears as if it was never gone, when your friend starts to get up from the
+        chair wooden claws clamp down on his ankles and wrists. He doesn't have much time to squirm as you watch him transform into wood, a look of anguish on his face. \n
+        You can't look away as you see his figure become part of the battle depicted in the carvings in the chair. ß
         """)
 
 def living_room():
