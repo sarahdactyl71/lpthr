@@ -76,8 +76,30 @@ def explore_upstairs:
         upstairs_room()
     elif "hallway" in choice:
         hallway()
+    else:
+        "try typing 'stairs', 'hallway' or 'door'"
+        explore_upstairs()
 
-        
+def go_downstairs():
+    print("""
+    You and your friends are pretty creeped out at this point. You look around, meet everyone's eyes
+    and motion your head to go down the stairs. Your friends nod, and you start to creep back down the way you
+    came. As your last friend is about halway down the staircase, you hear one final creak and know that something
+    is wrong. You feel the boards begin to creak beneath you. The wooden stairs begin to spinter and crack revealing
+    that there is much more than just one floor that you will fall. You think that if you jump you can make it before the
+    stairs collapse. However, you see your friend Lydia, will never make the jump. Do you jump and risk it or do you save Lydia?
+    """)
+
+    choice = input("> ")
+
+    if "jump" in choice:
+
+    elif "Lydia" in choice or "save" in choice or "lydia":
+
+    else:
+        print("Try typing 'Lydia' or 'jump'.")
+        go_downstairs():
+
 def living_room():
     print("""
     You lead your friends into the living room. The entire room is covered with a thin layer of dust
