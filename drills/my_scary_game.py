@@ -107,11 +107,19 @@ def kitchen():
 
     if "Tom" in choice:
         print("""
-        Tom takes a hesitant first bite, but as he chews and swallows you can see he enjoys it. He groans with delight as he forks a
+        Tom takes a hesitant first bite, but as he chews and swallows, you can see he enjoys it. He groans with delight as he forks a
         second, and then a third. His eyes get wide and soon he has wolfed down the entire dish. He picks up the plate and licks it clean. \n
-        'That was so GOOD!' Tom yells. 
+        'That was so GOOD!' Tom yells. 'I HAVE TO HAVE MORE!'. Tom frantically searches through the kitchen to find any morsel of what he
+        just ate. You see his eyes grow desperate and wild. 'PLEASE, I NEED MORE!' he shouts again. \n
+        You walk over to comfort him or snap him out of whatever he is experiencing. You put a hand on Tom's shoulder, but before you can think of what to
+        say, he graps your arm and sniffs deeply. 'Oh, THAT'S IT!' he screams. You try to yank your arm away, but Tom has too firm a hold. Tom takes a bite
+        out of your arm and you are blinded with pain. You shout out to your remaining friends, but they have fled. \n
+        You are soon overpowered by Tom who is wasting no time whittling you away bite by bite.
         """)
+
+        dead("You start to lose vision and everything goes black. The last thing you feel is the far away sensation of Tom biting into your neck.")
     else:
+        print("")
 
 
 start_game()
