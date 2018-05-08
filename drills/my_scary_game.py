@@ -22,6 +22,7 @@ def start_game():
     like it has been used recently. \n
     Up the stairs: You can't tell much from looking up the stairs. The only thing you can ascertain
     is that there is a light far off in the distance, slightly illuminating one of the hallways.
+    The only closed door in sight \n
     """)
 
     explore()
@@ -51,6 +52,8 @@ def explore():
         kitchen()
     elif "stairs" in choice or "up" in choice:
         explore_upstairs()
+    elif "door" in choice or "closed" in choice:
+        explore_basement()
     else:
         print("Are you too chicken to choose a direction?")
         start_game()
@@ -119,11 +122,16 @@ def upstairs_to_main_floor():
         As you investigate your surroundings you see no way out. It is as if this pit was here for this purpose. You touch the wall to find that
         it is carved from jagged rock. Lydia, who is the only climber among you, would have been able to scale out of there
         but here injuries are too extreme. You scream for help, but you know that there is no one around for miles. After several failed attempts
-        you sit with your back against a wall. All you can do now is wait. 
+        you sit with your back against a wall. All you can do now is wait.
         """)
     else:
         print("Try typing 'Lydia' or 'jump'.")
         upstairs_to_main_floor()
+
+def explore_basement:
+    print("""
+
+    """)
 
 def living_room():
     print("""
