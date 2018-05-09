@@ -1,5 +1,5 @@
 # Animal is-a object
-class Animal(object):
+class Animal():
     pass
 
 #Dog is-a animal
@@ -17,7 +17,7 @@ class Cat(Animal):
         self.name = name
 
 # person is-a object
-class Person(object):
+class Person():
 
     def __init__(self, name):
         #person has a name
