@@ -36,10 +36,11 @@ class Death(Scene):
         "I fart in your general direction",
         "You died like Tommy Wiseau dies in 'The Room'",
         "You're tearing me apart Lisa!",
-        "Words of encouragement are important!"    
+        "Words of encouragement are important!"
             ]
     def enter(self):
-        pass
+        print(Death.quips[randint(0, len(self.quips)-1)])
+        exit(1)
 
 class LaserWeaponArmory(Scene):
 
