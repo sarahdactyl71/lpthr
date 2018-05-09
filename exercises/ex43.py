@@ -30,6 +30,14 @@ class Engine():
 
 class Death(Scene):
 
+    quips = [
+        "Your mother was a hampster and your father smelled of elderberries!",
+        "Always look on the bright side of life *whistles*",
+        "I fart in your general direction",
+        "You died like Tommy Wiseau dies in 'The Room'",
+        "You're tearing me apart Lisa!",
+        "Words of encouragement are important!"    
+            ]
     def enter(self):
         pass
 
