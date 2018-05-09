@@ -4,9 +4,11 @@ class Parent():
         print("PARENT altered()")
 
 class Child(Parent):
-    print("CHILD, BEFORE PARENT altered()")
-    super(Child, self).altered()
-    print("CHILD, AFTER PARENT altered()")
+
+    def altered(self):
+        print("CHILD, BEFORE PARENT altered()")
+        super(Child, self).altered()
+        print("CHILD, AFTER PARENT altered()")
 
 dad = Parent()
 son = Child()
