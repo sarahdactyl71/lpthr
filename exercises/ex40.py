@@ -20,7 +20,16 @@ the_surf = Song(["I shelter on the beach",
                  "The surf comes every day",
                  "Washes my creations away"])
 
+home = ["Just do it right",
+        "Make it perfect and real",
+        "Because it's everything",
+        "Yeah everything",
+        "Was never the deal"]
+
+lcd_sound = Song(home)
 
 yung_lean.sing_me_a_song()
 
 the_surf.sing_me_a_song()
+
+lcd_sound.sing_me_a_song()
