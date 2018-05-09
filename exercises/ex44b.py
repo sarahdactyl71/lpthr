@@ -2,14 +2,16 @@
 
 class Parent():
 
-    def implicit(self):
+    def override(self):
         print("PARENT implicit()")
 
 class Child(Parent):
-    pass #tells python you want an empty block
+
+    def override(self):
+        print("CHILD override()")
 
 dad = Parent()
 son = Child()
 
-dad.implicit()
-son.implicit()
+dad.override()
+son.override()
