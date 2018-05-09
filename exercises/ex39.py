@@ -49,11 +49,15 @@ print("Florida's abbreviation is: ", states['Florida'])
 
 # do it by using the state then the cities dict
 print('-' * 10)
+# essentially combining two hashes to get the info we want
 print("Michigan has: ",  cities[states['Michigan']])
 print("Florida has: ",  cities[states['Florida']])
 
 #print every state abbreviation
 print('-' * 10)
+#states.items() prints out the keys and values in an array.
+# here it looks like:
+# dict_items([('Oregon', 'OR'), ('Florida', 'FL'), ('California', 'CA'), ('New York', 'NY'), ('Michigan', 'MI')])
 for state, abbrev in list(states.items()):
     print(f"{state} is abbreviated as {abbrev}")
 
@@ -72,6 +76,7 @@ print('-' * 10)
 # safely get an abbreviation by state that might not be there
 state = states.get('Texas')
 
+#if state doesn't exist do the following logic. (It doesn't exist)
 if not state:
     print("Sorry, no Texas.")
 
