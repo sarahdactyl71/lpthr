@@ -1,5 +1,7 @@
 from sys import exit
 
+import explore_main_floor
+
 def start_game():
 
     print("""
@@ -25,7 +27,7 @@ def start_game():
     The only closed door in sight. \n
     """)
 
-    explore()
+    explore_main_floor.explore()
 
 def dead(reason):
     print(f"{reason}. Dare you play again?")
@@ -40,25 +42,24 @@ def dead(reason):
         print("Try typing 'yes' if you want to play again, or 'no' if you don't.")
         dead("Dare you play again?")
 
-def explore():
+# def explore_main_floor():
+#
+#     print("Which room will you explore?")
+#
+#     choice = input("> ")
+#
+#     if "left" in choice or "living room" in choice:
+#         living_room()
+#     elif "right" in choice or "kitchen" in choice:
+#         kitchen()
+#     elif "stairs" in choice or "up" in choice:
+#         explore_upstairs()
+#     elif "door" in choice or "closed" in choice:
+#         explore_basement()
+#     else:
+#         print("Are you too chicken to choose a direction?")
 
-    print("Which room will you explore?")
-
-    choice = input("> ")
-
-    if "left" in choice or "living room" in choice:
-        living_room()
-    elif "right" in choice or "kitchen" in choice:
-        kitchen()
-    elif "stairs" in choice or "up" in choice:
-        explore_upstairs()
-    elif "door" in choice or "closed" in choice:
-        explore_basement()
-    else:
-        print("Are you too chicken to choose a direction?")
-        start_game()
-
-def explore_upstairs:
+def explore_upstairs():
     print("""
     You start to ascend the creaky steps. They groan so loudly you think they will collapse
     under your weight. Hand on the railing, you and your friends breath a sigh of relief
@@ -128,7 +129,7 @@ def upstairs_to_main_floor():
         print("Try typing 'Lydia' or 'jump'.")
         upstairs_to_main_floor()
 
-def explore_basement:
+def explore_basement():
     print("""
     You investigate the main floor to find the only closed door. You think it might be a broom closet, but you open
     it anyway. You find a winding, dusty, staircase leading to the basement. There is no light, but you find an electrical wire
@@ -138,7 +139,7 @@ def explore_basement:
     You aren't sure if you saw a figure in the breif moment that the lights were on, or if it was just your imagination. Since this is the age of
     technology, everyone in your party gets out their cellphones to illuminate the room. The room is still shrouded in shadow, but it is just bright
     enough to make out the objects in the room. \n
-    
+
     """)
 
     choice = input("> ")
@@ -179,7 +180,7 @@ def living_room():
         """)
 
     elif "explore" in choice or "room" in choice:
-        explore()
+        explore_main_floor()
     else:
         print("I don't understand. Try typing 'yes' or 'no'.")
         living_room()
