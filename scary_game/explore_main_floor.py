@@ -1,6 +1,7 @@
 class ExploreMainFloor():
 
     def explore(self):
+
         print("Which room will you explore?")
 
         choice = input("> ")
@@ -14,4 +15,4 @@ class ExploreMainFloor():
         elif "door" in choice or "closed" in choice:
             explore_basement()
         else:
-            print("Are you too chicken to choose a direction?")
+            print("Try typing 'lving room', 'basement', 'kitchen', or 'upstairs'.")

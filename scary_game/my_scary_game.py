@@ -27,7 +27,7 @@ def start_game():
     The only closed door in sight. \n
     """)
 
-    explore_main_floor.explore()
+    explore_main_floor.ExploreMainFloor().explore()
 
 def dead(reason):
     print(f"{reason}. Dare you play again?")
