@@ -15,4 +15,6 @@ class ExploreMainFloor():
         elif "door" in choice or "closed" in choice:
             explore_basement()
         else:
-            print("Try typing 'lving room', 'basement', 'kitchen', or 'upstairs'.")
+            print("""Are you too afraid to continue? \n
+            Try typing 'lving room', 'basement', 'kitchen', or 'upstairs'.""")
+            ExploreMainFloor().explore()
