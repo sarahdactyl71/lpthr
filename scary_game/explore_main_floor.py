@@ -1,3 +1,5 @@
+import explore_upstairs
+
 class ExploreMainFloor():
 
     def explore(self):
@@ -11,7 +13,7 @@ class ExploreMainFloor():
         elif "right" in choice or "kitchen" in choice:
             kitchen()
         elif "stairs" in choice or "up" in choice:
-            explore_upstairs()
+            explore_upstairs.ExploreUpstairs().explore()
         elif "door" in choice or "closed" in choice:
             explore_basement()
         else:

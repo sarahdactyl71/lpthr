@@ -42,48 +42,6 @@ def dead(reason):
         print("Try typing 'yes' if you want to play again, or 'no' if you don't.")
         dead("Dare you play again?")
 
-# def explore_main_floor():
-#
-#     print("Which room will you explore?")
-#
-#     choice = input("> ")
-#
-#     if "left" in choice or "living room" in choice:
-#         living_room()
-#     elif "right" in choice or "kitchen" in choice:
-#         kitchen()
-#     elif "stairs" in choice or "up" in choice:
-#         explore_upstairs()
-#     elif "door" in choice or "closed" in choice:
-#         explore_basement()
-#     else:
-#         print("Are you too chicken to choose a direction?")
-
-def explore_upstairs():
-    print("""
-    You start to ascend the creaky steps. They groan so loudly you think they will collapse
-    under your weight. Hand on the railing, you and your friends breath a sigh of relief
-    when you have reached the top of the stairs. You look to the right where the light is coming from. It
-    is behind a closed door. The light doesn't seem to be consistent, as if it is a flickering candle
-    or a fireplace. As you take a step towards the door you hear a voice behind you that
-    says "Turn around, don't go in there!". You look over your shoulder and see nothing but the darkened
-    hallway to your left. \n
-    Which way do you go? \n
-    Back down the stairs? Go through the door? Investigate the hallway?
-    """)
-
-    choice = input("> ")
-
-    if "stairs" in choice:
-        upstairs_to_main_floor()
-    elif "door" in choice:
-        upstairs_room()
-    elif "hallway" in choice:
-        hallway()
-    else:
-        "try typing 'stairs', 'hallway', or 'door'"
-        explore_upstairs()
-
 def upstairs_to_main_floor():
     print("""
     You and your friends are pretty creeped out at this point. You look around, meet everyone's eyes
