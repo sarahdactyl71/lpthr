@@ -1,3 +1,5 @@
+from sys import exit
+
 import explore_main_floor
 
 class Start():
@@ -16,7 +18,7 @@ class Start():
         There is a suspicious looking stain in the persian carpet that you tell yourself
         is just mud and debris. \n
         You are the leader of your group. \n
-        Which way do you go first? \n \n
+        Which way do you go first? \n 
         The left side: It looks like it leads to a grand living room, with a disheveled
         grand piano and several pieces of fine handmade furniture. \n
         The right side: It looks like it leads to a kitchen. All the pots and pans are out, like
