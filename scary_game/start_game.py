@@ -1,6 +1,7 @@
 from sys import exit
 
-import explore_main_floor
+# import explore_main_floor
+from explore_main_floor import ExploreMainFloor
 
 class Start():
 
