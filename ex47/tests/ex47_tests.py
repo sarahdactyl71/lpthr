@@ -19,11 +19,15 @@ def test_room_paths():
     assert_equal(center.go('north'), north)
     assert_equal(center.go('south'), south)
 
-def setup():
-    print("SETUP!")
+def test_map():
+    start = Room("Start", "You can go west and down a hole.")
+    west = Room("Trees", "There are trees here, you can go east.")
+    down = Room("Dungeon", "It's dark down here, you can go up.")
 
-def teardown():
-    print("TEARDOWN!")
+    start.add_paths({'west': west, 'down': down})
+    west.add_paths({'east': start})
+    east.add_paths({'up': start})
 
-def test_basic():
-    print("I RAN!", end='')
+    assert_equal(start.go('west'), west)
+    assert_equal(start.go('west').go('east'), start)
+    assert_equal(start.go('down').go('up'), start)
