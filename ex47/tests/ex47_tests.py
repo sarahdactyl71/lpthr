@@ -1,5 +1,5 @@
 from nose.tools import *
-improt ex47
+import ex47.game import Room
 
 def setup():
     print("SETUP!")
