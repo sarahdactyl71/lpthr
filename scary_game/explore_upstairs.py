@@ -1,4 +1,3 @@
-import upstairs_to_main_floor
 
 class ExploreUpstairs():
 
@@ -18,7 +17,8 @@ class ExploreUpstairs():
         choice = input("> ")
 
         if "stairs" in choice:
-            upstairs_to_main_floor.UpstairsToMainFloor.upstairs_to_main_floor()
+            from upstairs_to_main_floor import UpstairsToMainFloor
+            UpstairsToMainFloor().upstairs_to_main_floor()
         elif "door" in choice:
             upstairs_room()
         elif "hallway" in choice:

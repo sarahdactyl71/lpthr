@@ -30,6 +30,6 @@ class Start():
         The only closed door in sight. \n
         """)
 
-        explore_main_floor.ExploreMainFloor().explore()
+        ExploreMainFloor().explore_main_floor()
 
 Start().start_game()
