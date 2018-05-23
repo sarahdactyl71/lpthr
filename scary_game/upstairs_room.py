@@ -25,16 +25,38 @@ class UpstairsRoom():
         I am really tired of you kids coming into my home and disturbing my peace. This is breaking and
         entering you know. I have a mind to call the authorities on you." \n
         You try to stammer a reply, but before you can formulate that first word, the stranger
-        speaks again "Tell you what, I am old, and very lonely, play me at a game of chess and
-        I won't call the police." \n
-        Do you play? \n
+        speaks again "Tell you what, I am old, and very lonely. You can either play me at a game of
+        chess or a hand of cards. Do this and I won't call the police." \n
+        Which do you play? \n
         """)
 
         choice = input('> ')
 
-        if "play" in choice or "yes" in choice:
+        print(f"""
+        Confidence suddenly on your side, you say "{choice}" in a flat voice. From the side of the chair
+        you see an old hand guesture you forward.
+        """)
+
+        if "chess" in choice:
             print("""
+            You approach from the right hand side. Sitting in the rocking chair, you see a frail old woman.
+            She has a wool blanket resting over her legs, and is rocking gently back and forth on feet that you cannot see.
+            She is wearing a neat bun on the top of her head, and earrings so grand, and so large, you are surprised she
+            isn't toppling over. Despite her frailty she sits with an incredibly straight back. You try not to think that she
+            might be stronger than she would appear. \n
+            Without words she looks at you and nods at the board in front of her. Already set up, immaculately clean. The pieces
+            gleam in the flickering fire. You sit in the armchair opposite the old woman. You convince yourself the armchair was always there.
+            The room itself, feels bigger somehow, but after looking around it appears that nothing has changed.
+            
             """)
+
+        elif "cards" in choice:
+            print("""
+            You approach from the left hand side.
+            """)
+
         else:
             print("""
+            Not sure what you are getting at. Try typing 'cards' or 'chess'.
             """)
+            UpstairsRoom().upstairs_room()
