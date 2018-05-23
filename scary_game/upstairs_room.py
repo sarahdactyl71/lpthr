@@ -34,7 +34,7 @@ class UpstairsRoom():
 
         print(f"""
         Confidence suddenly on your side, you say "{choice}" in a flat voice. From the side of the chair
-        you see a gloved hand guesture you forward.
+        you see a silouetted hand guesture you forward.
         """)
 
         if "chess" in choice:
@@ -66,8 +66,25 @@ class UpstairsRoom():
             and warm your legs by the fire.""")
 
         elif "cards" in choice:
+            from dead import Dead
             print("""
-            You approach from the left hand side.
+            You approach from the left hand side. You are surpised to come upon a handsome man.
+            He is nimbly shuffling a deck of cards, shamelessly showing of tricks
+            only a trained hand could know. He places the deck down, looks you in the eye, and smiles. \n
+            "Why did you come here?" the man asks in such a way that you aren't sure if he
+            is angry or amused. He laughs, breaking some of the tension. "No, no, don't tell me. The reason doesn't matter does it?
+            You have found yourself in a predictable, almost laughable situation. You have no idea what's about to happen, and I
+            can see the fear in your eyes. Despite all this time, I still feel a tiny pang of empathy when
+            one of you falls victim to a teenage sterotype and ends up here." The man gestures around the room, pleased with himself. \n
+            "It's almost too easy. However, I am bored of the song and dance of mystery and intrigue regarding your fate." The man leans back in
+            the chair, placing his hands behind his head. He continues "This is what is going to happen, you will play a hand of cards with me. I don't
+            care the game, pick anything you want. Even if I haven't heard of it. It doesn't matter if you win or lose, I think we both know that you won't
+            be leaving this room." \n
+            The man pushes the deck of cards toward you. "Shuffle the cards and deal any game you wish."
+            """)
+            Dead().dead("""
+            You take a deep breath blinking back tears. You tremble as you take the cards into your hands and ask the man to cut the deck. He obliges with grace.
+            "Do you know go fish?" You say feebly. The man smiles and nods as you begin dealing out each card. 
             """)
 
         else:
