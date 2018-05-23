@@ -9,7 +9,8 @@ class ExploreMainFloor():
         if "left" in choice or "living room" in choice:
             living_room()
         elif "right" in choice or "kitchen" in choice:
-            kitchen()
+            from kitchen import Kitchen
+            Kitchen().kitchen()
         elif "stairs" in choice or "up" in choice:
             from explore_upstairs import ExploreUpstairs
             ExploreUpstairs().explore()
