@@ -1,4 +1,4 @@
-class Living Room():
+class LivingRoom():
 
     def living_room(self):
         print("""
@@ -13,6 +13,7 @@ class Living Room():
         choice = input("> ")
 
         if "yes" in choice or "play" in choice:
+            from dead import Dead
             print("""
             You press one finger down on a key. The piano is badly out of tune, but you can't resist playing another key, and then another. \n
             Soon you are sitting on the bench playing your heart out to a tune that both pains and excites you. \n
@@ -27,7 +28,7 @@ class Living Room():
             You turn back to the piano. \n
             """)
 
-            dead("""You are caught in a never ending loop of piano playing. \n
+            Dead().dead("""You are caught in a never ending loop of piano playing. \n
             You don't know how much time has passed, but eventually you are ushered off the piano bench
             and onto a seat in the audience. \n
             You don't understand, wasn't your playing enjoyable. \n
@@ -35,7 +36,8 @@ class Living Room():
             """)
 
         elif "explore" in choice or "room" in choice:
-            explore_main_floor()
+            from explore_main_floor import ExploreMainFloor
+            ExploreMainFloor().explore_main_floor()
         else:
             print("I don't understand. Try typing 'yes' or 'no'.")
-            living_room()
+            LivingRoom().living_room()

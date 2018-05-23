@@ -7,7 +7,8 @@ class ExploreMainFloor():
         choice = input("> ")
 
         if "left" in choice or "living room" in choice:
-            living_room()
+            from living_room import LivingRoom
+            LivingRoom().living_room()
         elif "right" in choice or "kitchen" in choice:
             from kitchen import Kitchen
             Kitchen().kitchen()
