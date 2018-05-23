@@ -1,7 +1,7 @@
 class Dead():
 
     def dead(self, reason):
-        print(f"{reason}. Dare you play again?")
+        print(f"{reason} \n\n\n DARE YOU PLAY AGAIN (yes/no)???")
 
         choice = input("> ")
 
@@ -12,4 +12,4 @@ class Dead():
             Start.start_game()
         else:
             print("Try typing 'yes' if you want to play again, or 'no' if you don't.")
-            Dead().dead("Dare you play again?")
+            Dead().dead("DARE YOU PLAY AGAIN (yes/no)???")
