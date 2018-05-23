@@ -1,5 +1,3 @@
-import start_game
-
 class Dead():
 
     def dead(self, reason):
@@ -10,7 +8,8 @@ class Dead():
         if choice == "no":
             exit(0)
         elif choice == "yes":
-            start_game()
+            from start_game import Start
+            Start.start_game()
         else:
             print("Try typing 'yes' if you want to play again, or 'no' if you don't.")
             Dead().dead("Dare you play again?")

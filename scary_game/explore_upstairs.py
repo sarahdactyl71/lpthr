@@ -1,4 +1,3 @@
-
 class ExploreUpstairs():
 
     def explore(self):

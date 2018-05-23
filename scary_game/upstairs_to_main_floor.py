@@ -1,8 +1,6 @@
-import dead
-
 class UpstairsToMainFloor():
 
-    def upstairs_to_main_floor():
+    def upstairs_to_main_floor(self):
         print("""
         You and your friends are pretty creeped out at this point. You look around, meet everyone's eyes
         and motion your head to go down the stairs. Your friends nod, and you start to creep back down the way you
@@ -26,7 +24,8 @@ class UpstairsToMainFloor():
             choice = input("> ")
 
             if "leave" in choice:
-                dead.Dead().dead("""You are too stunned from surviving the fall that you have no time to greive for your lost friend.
+                from dead import Dead
+                Dead().dead("""You are too stunned from surviving the fall that you have no time to greive for your lost friend.
                 You leave the house bruised, but you are alive. Time passes and you have never gone back to the house, out of fear,
                 and also guilt. You are much older now, and you hear urban legends from the younger generation speaking of
                 a young woman, badly crooked, wandering the house seeking her lost friends.""")
@@ -34,7 +33,8 @@ class UpstairsToMainFloor():
                 explore_basement()
 
         elif "Lydia" in choice or "save" in choice or "lydia":
-            dead.Dead().dead("""
+            from dead import Dead
+            Dead().dead("""
             You, and a few others, fall with Lydia to the cavern below. You land hard on your side. As you get up
             you find that you are badly injured, but you are able to walk. Upon investigation however, you find that some
             of your friends are not as lucky. \n
@@ -45,4 +45,4 @@ class UpstairsToMainFloor():
             """)
         else:
             print("Try typing 'Lydia' or 'jump'.")
-            upstairs_to_main_floor()
+            UpstairsToMainFloor().upstairs_to_main_floor()
