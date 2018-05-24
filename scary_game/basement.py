@@ -52,10 +52,29 @@ class Basement():
             was right, there IS something moving in the distance. It sounds like
             footfalls, but the cadence is unfamiliar, and you also hear a constant
             sound like something is being dragged. \n
-
+            You tenatively make a few steps forward, as if you are unsure if the
+            ground will support you. After a few steps you find comfort in the earth
+            pushing back at you and you guesture your friends to follow you deeper into
+            the tunnel. \n
+            Keeping your right hand on the wall you walk, following the sound as it gets 
+            more and more defined. The tunnel gradually widens to a large room with
+            several eroding pillars. You know the sound is coming from this room, but for
+            whatever reason it is hard to triangulate. \n
+            You hear an odd thud on the ground... then another. The third time you hear
+            it, you turn around to see three of your friends on the ground. Their mouths
+            are wide, screaming a silent scream and their eyes stare off into the distance.
+            Brian is amongst the three fallen. You bend down to touch him and feel a
+            slimy substance on his skin. He is cold to the touch. You turn your head
+            to come over Brians mouth, and feel his neck for a pulse... nothing. \n
+            As you stand up to talk with the rest of your friends about an escape you hear
+            the sound that you now identify as a fallen friend. You hear that sound again,
+            as you turn, and once more before your eyes can adjust.
             """)
 
             Dead.dead("""
+            You look around and see now that everyone you were with is dead on the floor.
+            You hear walking and dragging sound, so very close to you now. You close your
+            eyes and wait. \n
             """)
 
         elif "trap" in choice:
