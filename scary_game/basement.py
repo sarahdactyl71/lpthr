@@ -42,12 +42,14 @@ class Basement():
 
         if "red" in choice:
             print("""
+            
             """)
 
         elif "trap" in choice:
             print("""
+
             """)
-            
+
         else:
             print("""
             I don't understand. Try typing 'trapdoor' or 'red door'.
