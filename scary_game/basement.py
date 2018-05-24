@@ -34,15 +34,28 @@ class Basement():
         their phones at the shelf, Brian pushes it aside to reveal a door.
         The door is red, or rather was painted red a long time ago. Most of the color
         has been scraped off. It looks like a very similar make to the trapdoor on the
-        floor. \n
+        floor. "I think I can hear something moving on the other side!" Brian tells you.\n
         Which door do you go through? The trapdoor or the red door?
         """)
 
         choice = input("> ")
 
         if "red" in choice:
+            from dead import Dead
             print("""
-            
+            You stand up from your squat and make your way to the red door. You give
+            Brian a nod as you grab the donut shaped knob and pull towards yourself.
+            It's heavy, but you manage to get it open on your own. You hear a click
+            as the door settles all the way open, as far back on its hinges as it can go.
+            You smell the scent of earth and mildew. Before you is a long, dark tunnel.
+            You take a few steps into the tunnel, strain your ears and find that Brian
+            was right, there IS something moving in the distance. It sounds like
+            footfalls, but the cadence is unfamiliar, and you also hear a constant
+            sound like something is being dragged. \n
+
+            """)
+
+            Dead.dead("""
             """)
 
         elif "trap" in choice:
