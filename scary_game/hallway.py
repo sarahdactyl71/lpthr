@@ -38,3 +38,7 @@ class Hallway():
         elif "leave" in choice:
             from upstairs_to_main_floor import UpstairsToMainFloor
             UpstairsToMainFloor().upstairs_to_main_floor()
+
+        else:
+            print(f"I don't understand {choice}. Try typing 'leave' or 'help'.")
+            Hallway().hallway()
