@@ -1,11 +1,11 @@
 from sys import exit
 
 # import explore_main_floor
-from explore_main_floor import ExploreMainFloor
 
 class Start():
 
     def start_game(self):
+        from explore_main_floor import ExploreMainFloor
 
         print("""
         Through a series of escalading dares you and your friends find yourselves

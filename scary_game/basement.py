@@ -71,13 +71,14 @@ class Basement():
             as you turn, and once more before your eyes can adjust.
             """)
 
-            Dead.dead("""
+            Dead().dead("""
             You look around and see now that everyone you were with is dead on the floor.
             You hear walking and dragging sound, so very close now. You close your
             eyes and wait. \n
             """)
 
         elif "trap" in choice:
+            from dead import Dead
             print("""
             You look at Amy, and together you heave the trapdoor open. You have
             Just enough time to move out of the way as the door crashing on the
@@ -128,7 +129,7 @@ class Basement():
             along the way. Steps becoming harder now, you focus on moving one foot in
             front of the other, until you cannot propel yourself forward. You tell
             yourself it would be okay to sit and rest. You'll get up at any moment and
-            keep walking. Any moment. 
+            keep walking. Any moment.
             """)
 
         else:
