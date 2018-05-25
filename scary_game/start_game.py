@@ -27,7 +27,8 @@ class Start():
         and the dishes in the sink, you feel like it has been used recently. \n
         Up the stairs: You can't tell much from looking up the stairs. The only
         thing you can ascertain is that there is a light far off in the distance,
-        slightly illuminating one of the hallways. The only closed door in sight. \n
+        slightly illuminating one of the hallways. There is another door on the
+        main floor, the only closed door in sight. \n
         """)
 
         ExploreMainFloor().explore_main_floor()

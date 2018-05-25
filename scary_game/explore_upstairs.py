@@ -19,7 +19,7 @@ class ExploreUpstairs():
         if "stairs" in choice or "down" in choice:
             from upstairs_to_main_floor import UpstairsToMainFloor
             UpstairsToMainFloor().upstairs_to_main_floor()
-        elif "door" in choice or "room":
+        elif "door" in choice or "room" in choice:
             from upstairs_room import UpstairsRoom
             UpstairsRoom().upstairs_room()
         elif "hallway" in choice:
