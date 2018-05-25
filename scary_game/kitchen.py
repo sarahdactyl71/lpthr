@@ -42,7 +42,7 @@ class Kitchen():
             Dead().dead("""You start to lose vision and everything goes black. The last
             thing you feel is the far away sensation of Tom biting into your neck.""")
 
-        else:
+        elif "me" in choice or "I do" in choice:
             from dead import Dead
             print("""
             You try to hide your nerves with a smile as you pick up the fork near
@@ -70,3 +70,9 @@ class Kitchen():
             can't go home you decide it best to sit and wait for the next group of silly
             teenagers to come through. \n
             """)
+
+        else:
+            print(f"""
+            I don't understand {choice}. Try typing 'me' or 'Tom'.
+            """)
+            Kitchen().kitchen()

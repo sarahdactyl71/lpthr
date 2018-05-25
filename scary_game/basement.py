@@ -133,7 +133,7 @@ class Basement():
             """)
 
         else:
-            print("""
-            I don't understand. Try typing 'trapdoor' or 'red door'.
+            print(f"""
+            I don't understand {choice}. Try typing 'trapdoor' or 'red door'.
             """)
             Basement().explore_basement()
