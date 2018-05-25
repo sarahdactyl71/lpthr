@@ -30,6 +30,14 @@ class Hallway():
         if "help" in choice:
             from dead import Dead
             print("""
+            You decide that you should help this girl. You ask what you can do.
+            She tells you that you need to remove the mirror from the wall. She reminds
+            you to be careful, that this will only work if the mirror is intact.
+            "Move it forward in front of you like a shield. Be mindful never to look
+            at the deamon. I will guide you with my voice." \n
+            You pull the mirror off the wall. Just before you turn the mirror away from
+            you, the girl flashes a smile. The mirror feels cumbersome in your hands as you
+            move towards the illuminated room.  
             """)
 
             Dead().dead("""
