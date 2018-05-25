@@ -35,14 +35,11 @@ class UpstairsRoom():
 
         choice = input('> ')
 
-        print(f"""
-        Confidence suddenly on your side, you say "{choice}" in a flat voice. From the side of the chair
-        you see a silouetted hand guesture you forward.
-        """)
-
         if "chess" in choice:
             from dead import Dead
-            print("""
+            print(f"""
+            Confidence suddenly on your side, you say "{choice}" in a flat voice.
+            From the side of the chair you see a silouetted hand guesture you forward. \n
             You approach from the right hand side. Sitting in the rocking chair,
             you see a frail old woman. She has a wool blanket resting over her legs,
             and is rocking gently back and forth on feet that you cannot see.
@@ -82,7 +79,9 @@ class UpstairsRoom():
 
         elif "cards" in choice:
             from dead import Dead
-            print("""
+            print(f"""
+            Confidence suddenly on your side, you say "{choice}" in a flat voice.
+            From the side of the chair you see a silouetted hand guesture you forward. \n
             You approach from the left hand side. You are surpised to come upon a
             handsome man. He is nimbly shuffling a deck of cards, shamelessly showing
             of tricks only a trained hand could know. He places the deck down, l

@@ -16,7 +16,7 @@ class ExploreUpstairs():
 
         choice = input("> ")
 
-        if "stairs" in choice:
+        if "stairs" in choice or "down" in choice:
             from upstairs_to_main_floor import UpstairsToMainFloor
             UpstairsToMainFloor().upstairs_to_main_floor()
         elif "door" in choice or "room":
