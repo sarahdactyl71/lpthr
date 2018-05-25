@@ -10,6 +10,31 @@ class Hallway():
         a little girl. The era of her clothing looks like the era of the house, and
         similarly, in the same degree of disrepair. \n
         You walk closer to the mirror, directly in front of it, and address the child.
-        You ask her what she is doing in the mirror, and what happened to her.
-        She tells you that  
+        You ask her what she is doing in the mirror, and why she told you to avoid
+        the other room. \n
+        The girl begins "A powerful deamon resides in that room. It trapped me in this
+        mirror long ago, and it is one of the main reasons why this place is cursed.
+        The deamon changes its appearence everytime you encounter it. It can look like
+        a stranger or someone you know. This makes it particularly fearsome." \n
+        You aren't sure what to say, or really, if you believe what you are seeing.
+        The girl inturrupts your thoughts. "Help me," she pleads "something has
+        to be done about this presence. Then I will finally be able to get out of this
+        prison." The girl says the last part with a frown. \n
+        Part of you is hesitant, but the other part wants to help this poor child.
+        What do you do? \n
+        Help the girl, or leave the house now?
         """)
+
+        choice = input('> ')
+
+        if "help" in choice:
+            from dead import Dead
+            print("""
+            """)
+
+            Dead().dead("""
+            """)
+
+        elif "leave" in choice:
+            from upstairs_to_main_floor import UpstairsToMainFloor
+            UpstairsToMainFloor().upstairs_to_main_floor()
