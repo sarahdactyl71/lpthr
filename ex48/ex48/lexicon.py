@@ -23,6 +23,8 @@ def scan(phrase):
         checked_word = convert_numbers(word)
         if word in lexicon.keys():
             output.append((lexicon[word], checked_word))
+        else:
+            output.append(('error', checked_word))
     return output
 
 
