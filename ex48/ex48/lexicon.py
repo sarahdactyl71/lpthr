@@ -9,6 +9,8 @@ lexicon = {
     'the': 'stop',
     'in': 'stop',
     'of': 'stop',
+    'bear': 'noun',
+    'princess': 'noun'
     }
 
 def scan(phrase):
