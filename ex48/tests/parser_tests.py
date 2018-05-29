@@ -24,3 +24,8 @@ def test_parse_objects():
     assert_equal(parser.parse_object([('stop', 'the'), ('noun', 'BMO')]), ('noun', 'BMO'))
     assert_equal(parser.parse_object([('stop', 'the'), ('noun', 'Lil Gideon')]), ('noun', 'Lil Gideon'))
     assert_equal(parser.parse_object([('stop', 'the'), ('direction', 'south')]), ('direction', 'south'))
+
+def test_parse_subjects():
+    assert_equal(parser.parse_subject([('stop', 'the'), ('noun', 'BMO')]), ('noun', 'BMO'))
+    assert_equal(parser.parse_subject([('stop', 'the'), ('verb', 'jump')]), ('noun', 'player'))
+    assert_equal(parser.parse_subject([('noun', 'BMO'), ('verb', 'jump')]), ('noun', 'BMO'))
