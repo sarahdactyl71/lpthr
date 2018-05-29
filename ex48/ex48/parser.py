@@ -10,10 +10,10 @@ class ParserError(Exception):
 
 class Sentence(object):
 
-    def __init__(self, subject, verb, object):
+    def __init__(self, subject, verb, obj):
         self.subject = subject[1]
         self.verb = verb[1]
-        self.object =obj[1]
+        self.object = obj[1]
 
 def peek(word_list):
     if word_list:
@@ -50,7 +50,7 @@ def parse_object(word_list):
     next_word = peek(word_list)
 
     if next_word == 'noun':
-        return match(word_list 'noun')
+        return match(word_list, 'noun')
     elif next_word == 'direction':
         return match(word_list, 'direction')
     else:
@@ -61,7 +61,7 @@ def parse_subject(word_list):
     next_word = peek(word_list)
 
     if next_word == 'noun':
-        return match(word_list)
+        return match(word_list, 'noun')
     elif next_word == 'verb':
         return ('noun', 'player')
     else:
