@@ -20,5 +20,7 @@ def test_parse_verbs():
     assert_equal(parser.parse_verb([('stop', 'the'), ('verb', 'jump')]), ('verb', 'jump'))
     assert_equal(parser.parse_verb([('verb', 'jump'), ('noun', 'sword')]), ('verb', 'jump'))
 
-def test_parse_nouns():
-    
+def test_parse_objects():
+    assert_equal(parser.parse_object([('stop', 'the'), ('noun', 'BMO')]), ('noun', 'BMO'))
+    assert_equal(parser.parse_object([('stop', 'the'), ('noun', 'Lil Gideon')]), ('noun', 'Lil Gideon'))
+    assert_equal(parser.parse_object([('stop', 'the'), ('direction', 'south')]), ('direction', 'south'))
