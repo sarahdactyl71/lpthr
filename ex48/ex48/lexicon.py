@@ -27,7 +27,6 @@ def scan(phrase):
             output.append(('error', checked_word))
     return output
 
-
 def convert_numbers(s):
     try:
         return int(s)
