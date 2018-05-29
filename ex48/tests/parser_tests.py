@@ -29,3 +29,9 @@ def test_parse_subjects():
     assert_equal(parser.parse_subject([('stop', 'the'), ('noun', 'BMO')]), ('noun', 'BMO'))
     assert_equal(parser.parse_subject([('stop', 'the'), ('verb', 'jump')]), ('noun', 'player'))
     assert_equal(parser.parse_subject([('noun', 'BMO'), ('verb', 'jump')]), ('noun', 'BMO'))
+
+def test_parse_sentence():
+    a = parser.Sentence(('subject', 'sarah'), ('verb', 'play'), ('object', 'Scott'))
+    assert_equal(a.subject, 'sarah')
+    assert_equal(a.verb, 'play')
+    assert_equal(a.object, 'Scott')
