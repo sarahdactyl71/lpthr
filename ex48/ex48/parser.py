@@ -18,7 +18,7 @@ class Sentence(object):
 def peek(word_list):
     if word_list:
         word = word_list[0]
-        retunr word[0]
+        return word[0]
     else:
         return None
 
@@ -32,3 +32,7 @@ def match(word_list, expecting):
             return None
     else:
         return None
+
+def skip(word_list, word_type):
+    while peek(word_list) == word_type:
+        match(word_list, word_type)
