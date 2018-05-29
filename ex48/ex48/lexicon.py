@@ -1,2 +1,8 @@
-def scan(direction):
-        print("And that my leige is why we know the earth to be banana shaped")
+lexicon = {
+    'north': 'direction',
+    'south': 'direction',
+    'east': 'direction',
+    'west': 'direction',
+    }
+
+def scan(phrase):
