@@ -6,3 +6,13 @@ lexicon = {
     }
 
 def scan(phrase):
+
+    words = phrase.split()
+    output = []
+
+
+def convert_numbers(s):
+    try:
+        return int(s)
+    except ValueError:
+        return None
