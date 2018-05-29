@@ -7,3 +7,17 @@
 
 class ParserError(Exception):
     pass
+
+class Sentence(object):
+
+    def __init__(self, subject, verb, object):
+        self.subject = subject[1]
+        self.verb = verb[1]
+        self.object =obj[1]
+
+    def peek(word_list):
+        if word_liest:
+            word = word_list[0]
+            retunr word[0]
+        else:
+            return None
