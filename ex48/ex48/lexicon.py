@@ -1,2 +1,4 @@
-def scan(self, direction):
-    print("You did it")
+class Lexicon():
+
+    def scan(self):
+        

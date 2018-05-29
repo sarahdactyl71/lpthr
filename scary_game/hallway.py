@@ -27,7 +27,7 @@ class Hallway():
 
         choice = input('> ')
 
-        if "help" in choice:
+        if "help" in choice or "girl" in choice:
             from dead import Dead
             print("""
             You decide that you should help this girl. You ask what you can do.
@@ -61,7 +61,7 @@ class Hallway():
             your wounds healing, like you are watching the damange that was done in
             rewind. Your hands heal completely. When you try to pull them away they are
             stuck to the glass. You look up to see the little girl is sporting a
-            sinsiter grin. \n
+            sinister grin. \n
             You are actively working to pull your hands away, but bit by bit you are
             losing sensation in your arms. This moves through your torso, to your legs,
             and eventually, your head. You feel drowsy, like you are in a dream. \n
