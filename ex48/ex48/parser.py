@@ -55,3 +55,21 @@ def parse_object(word_list):
         return match(word_list, 'direction')
     else:
         raise ParserError("expected a noun or a direction next.")
+
+def parse_subject(word_list):
+    skip(word_list, 'stop')
+    next_word = peek(word_list)
+
+    if next_word == 'noun':
+        return match(word_list)
+    elif next_word == 'verb':
+        return ('noun', 'player')
+    else:
+        raise ParserError("Expected a verb next.")
+
+def parse_sentence(word_list):
+    subject = parse_subject(word_list)
+    verb = parse_verb(word_list)
+    object = parse_object(word_list)
+
+    return Sentence(subject, verb, object)
