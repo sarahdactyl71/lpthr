@@ -36,3 +36,22 @@ def match(word_list, expecting):
 def skip(word_list, word_type):
     while peek(word_list) == word_type:
         match(word_list, word_type)
+
+def parse_verb(word_list):
+    skip(word_list, 'stop')
+
+    if peek(word_list) == 'verb':
+        return match(word_list, 'verb')
+    else:
+        raise ParserError("Expected a verb next.")
+
+def parse_object(word_list):
+    skip(word_list, 'stop')
+    next_word = peek(word_list)
+
+    if next_word == 'noun':
+        return match(word_list 'noun')
+    elif next_word == 'direction':
+        return match(word_list, 'direction')
+    else:
+        raise ParserError("expected a noun or a direction next.")
