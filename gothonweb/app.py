@@ -4,20 +4,17 @@ from flask import request
 
 app = Flask(__name__)
 
-@app.route('/hello')
+@app.route('/hello', methods=['POST', 'GET'])
 def index():
-    #these are like params in url if none are there it will say
-    #"Hello nobody", if you have something like http://localhost:5000/hello?name=Frank
-    # It will say "Hello Frank"
-    name = request.args.get('name', 'Nobody')
-    greet = request.args.get('greet', 'Hello')
+    greeting = "Hello World"
 
-    if name:
+    if request.method == "POST":
+        name = request.form['name']
+        greet = request.form['greet']
         greeting = f"{greet}, {name}"
+        return render_template("index.html", greeting=greeting)
     else:
-        greeting = "Hello World"
-
-    return render_template("index.html", greeting=greeting)
+        return render_template("hello_form.html")
 
 if __name__ == "__main__":
     app.run()
