@@ -6,6 +6,9 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
+    #these are like params in url if none are there it will say
+    #"Hello nobody", if you have something like http://localhost:5000/hello?name=Frank
+    # It will say "Hello Frank"
     name = request.args.get('name', 'Nobody')
 
     if name:
