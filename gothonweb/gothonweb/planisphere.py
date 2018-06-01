@@ -84,3 +84,44 @@ You jump into a random pod and hit the eject button. The pod escapes
 out into the void of space, then implodes as the hull ruptures, crushing
 your body into jam jelly.
 """)
+
+escape_pod.add_paths({
+    '2': the_end_winner,
+    '*': the_end_loser
+})
+
+generic_death = Room("death", "You died.")
+
+the_bridge.add_paths({
+    'throw the bomb': generic_death,
+    'slowly place the bomb': escape_pod
+})
+
+laser_weapon_armory.add_paths({
+    '0132': the_bridge,
+    '*': generic_death
+})
+
+central_corridor.add_paths({
+    'shoot!': generic_death,
+    'dodge!': generic_death,
+    'tell a joke': laser_weapon_armory
+})
+
+START = 'central_corridor'
+
+def load_room(name):
+    """
+    There is a potential security problem here.
+    Who gets to set name? Can that expose a variable?
+    """"
+    return globals().get(name)
+
+def name_room(room):
+    """
+    Same possible security problem. Can you trust room?
+    What's a better solution than this globals lookup?
+    """
+    for key, value in globals().items():
+        if value == room:
+            return key
