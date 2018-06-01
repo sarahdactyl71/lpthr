@@ -1,5 +1,5 @@
 from nose.tools import *
-from gothonweb.planisphere import Room
+from gothonweb.planisphere import *
 
 
 def test_room():

@@ -114,7 +114,7 @@ def load_room(name):
     """
     There is a potential security problem here.
     Who gets to set name? Can that expose a variable?
-    """"
+    """
     return globals().get(name)
 
 def name_room(room):
