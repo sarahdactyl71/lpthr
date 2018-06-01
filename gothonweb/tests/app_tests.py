@@ -10,3 +10,9 @@ def test_index():
 
     rv = web.get('/hello', follow_redirects=True)
     assert_equal(rv.status_code, 200)
+    assert_in(b"Fill Out THis Form", rv.data)
+
+    data = {'name': 'Sarah', 'greet': 'Hola'}
+    rv = web.post('/hello', follow_redirects=True, data=data)
+    assert_in(b"Sarah", rv.data)
+    assert_in(b"Hola", rv.data)
